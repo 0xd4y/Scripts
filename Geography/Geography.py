@@ -114,7 +114,7 @@ def main():
         print ('          Percent correct: 100%')
         print ('      ------------------------\n\n')
     con = 1
-    with open ('countries.txt', 'r') as countries:
+    with open ('Countries.txt', 'r') as countries:
         #scan for all lines up to random integer
         while(True):
             for line in countries: 
@@ -127,7 +127,7 @@ def main():
             break
         
     cap = 1
-    with open ('capitals.txt','r') as capitals:
+    with open ('Capitals.txt','r') as capitals:
         while(True):
             for line in capitals:
 
