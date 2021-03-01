@@ -85,7 +85,7 @@ def main():
     guess = 0
     hint = 0
     if(len(questions)==196):
-        print("\nThanks for playing the game!")
+        print("\nThanks for playing the game! By the way, Beron is my best friend and he is really cool.")
         time.sleep(3)
         score()
     while(True):
@@ -114,7 +114,7 @@ def main():
         print ('          Percent correct: 100%')
         print ('      ------------------------\n\n')
     con = 1
-    with open ('Countries.txt', 'r') as countries:
+    with open ('countries.txt', 'r') as countries:
         #scan for all lines up to random integer
         while(True):
             for line in countries: 
@@ -127,7 +127,7 @@ def main():
             break
         
     cap = 1
-    with open ('Capitals.txt','r') as capitals:
+    with open ('capitals.txt','r') as capitals:
         while(True):
             for line in capitals:
 
@@ -355,5 +355,57 @@ def main():
         countries(guess,replycon,answercon)
     else:
         capitals(guess,replycap,answercap)
+      
+
+#    if (randomp > 196):
+ #       birthday = input ("\nWhose birthday is it today? ")
+   #     birthdayboy = ['aba', 'Aba', 'Oren', 'oren']
+    #    if (birthday in birthdayboy):
+     #       print ("\nHappy 53rd birthday! 07/28/19\n")
+      #      time.sleep(3)
+       #     main()
+       # else:
+        #    print ("How do you not know who the birthday boy is?\nHint: He was born on July 28 1966")
+         #   time.sleep(3)
+          #  main()
 
 main() 
+
+#def remove_duplicates():
+#    global wrong_countries
+#    global close_countries
+#    global right_countries
+#    global wrong_capitals
+#    global right_capitals
+#    global close_capitals
+#    res = []
+#    for x,y,z in wrong_countries:
+#        if(x,y not in res):
+#            res.append([x,y,z])
+#    wrong_countries = res
+#    res = []
+#    for x,y,z in wrong_capitals:
+#        if(x,y not in res):
+#            res.append([x,y,z])
+#    wrong_capitals = res
+#    res = []
+#    for x,y,z in close_countries:
+#        if(x,y not in res):
+#            res.append([x,y,z])
+#    close_countries = res
+#    res = []
+#    for x,y,z in close_capitals:
+#        if(x,y not in res):
+#            res.append([x,y,z])
+#    close_capitals = res
+#    res = []
+#    for x,y,z in right_capitals:
+#        if(x,y not in res):
+#            res.append([x,y,z])
+#    right_capitals = res
+#    res = []
+#    for x,y,z in right_countries:
+#        if(x,y not in res):
+#            res.append([x,y,z])
+#    right_countries = res
+#    print(wrong_countries)
